@@ -51,32 +51,23 @@ public class TestCases {
 
     }
 //SESSION 4 ASSIGMENTS
-    public void testCase01(){
+    public void testCase02(){
         
-        System.out.println("Start Test case: testCase01");
-          SearchAmazon amazon = new SearchAmazon();
-          amazon.search_amazon_on_google();
+        System.out.println("Start Test case: testCase02");
+          HyperlinksBookMyShow bookMyShow = new HyperlinksBookMyShow();
+          bookMyShow.search_Page_bookMyShow();
         
-         // // Negivagte to URL
-        // driver.get("https://www.google.com");
-
-        // // Click on Search Bar Using Locator "Name" q
-        // driver.findElementByName("q").click();
-       
-        // // Type in "Amazon" in search bar Using Locator "Name" q
-        // driver.findElementByName("q").sendKeys("amazon");
-       
-        // // Click on Google Search button Using Locator "XPath" (//input[@value='Google
-        // // Search'])[1]
-        // driver.findElementByXPath("(//input[@value='Google Search'])[1]").click();
-
-        // // Validate Amazon.in search result Using Locator "Link
-        // // Text"(//input[@value='Google Search'])[1]
-        // boolean ds = driver.findElementByXPath("//h3[text()='Amazon.in']").isDisplayed();
-        // System.out.println(ds);
-        
-        // //Click on the link of Amazon.in Using Locator "XPath" //h3[text()='Amazon.in']
-        // driver.findElementByXPath("//h3[text()='Amazon.in']").click();
+        //  public void testCase02(){
+            //         System.out.println("Start Test case: testCase02");
+            //         // Nevigate to Url  https://in.bookmyshow.com/explore/home/chennai
+            //         driver.get("https://in.bookmyshow.com/explore/home/chennai");
+            
+            //         // Locate the locater for hyperlink  Using Locator "Name" a
+            //         int count = driver.findElements(By.tagName("a")).size();
+            
+            //         // Get count of the hyperlinks Using Locator "Name" a
+            //         System.out.println(count);
+            //     }
     }
 
 
