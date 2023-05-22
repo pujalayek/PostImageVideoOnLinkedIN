@@ -51,61 +51,55 @@ public class TestCases {
 
     }
 //SESSION 4 ASSIGMENTS
-    public void testCase03(){
+    public void testCase06() throws InterruptedException, AWTException{
         
-        System.out.println("Start Test case: testCase03");
-          LinkedinPost Post = new LinkedinPost();
-          Post.Post_linkin();
+        System.out.println("Start Test case: testCase06");
+        ImagepostLinkin imagevideo = new ImagepostLinkin();
+        imagevideo.PostImage();
         
-        //   public void search_Page_bookMyShow() {
-        //     this.driver = TestCases.TestCasesInitializer();
-            
-        //     public void testCase03() throws InterruptedException {
-        //     System.out.println("Start testCase: testCase03");
-        //     // Navigate to URL https://www.linkedin.com/
-        //     driver.get("https://www.linkedin.com/");
-            
-        //     // Type "Email or phone: in Username textbox Using Locator "Name" session_key
-        //     driver.findElementByName("session_key").sendKeys("pujalayek93@gmail.com");
-            
-        //     // Type "Password" in password textbox Using Locator "Name" session_password
-        //     driver.findElementByName("session_password").sendKeys("D0ryL@yek93");
-            
-        //     // Click on "Sign in" button Using Locator "XPath" //button[@type='submit']
-        //     driver.findElementByXPath("//button[@type='submit']").click();
-            
-        //     // Print the count of "Who's viewed your profile" Using Locator "XPath"
-        //     // //*[contains(text(),'viewed your
-        //     // profile')]/../../following-sibling::div//strong
-        //     String viewedProfile = driver
-        //             .findElement(
-        //                     By.xpath("//*[contains(text(),'viewed your profile')]/../../following-sibling::div//strong"))
-        //             .getText();
-        //     System.out.println("Who's viewed your profile: " + viewedProfile);
-           
-        //    // Print the count of "Impressions of your post" Using Locator "XPath"
-        //     // //*[text()='Impressions of your post']/../../following-sibling::div//strong
+//             // Navigate to URL https://www.linkedin.com/
+//     driver.get("https://www.linkedin.com/");
+//     // Type "Email or phone: in Username textbox Using Locator "Name" session_key
+//     driver.findElementByName("session_key").sendKeys("pujalayek93@gmail.com");
+//     // Type "Password" in password textbox Using Locator "Name" session_password
+//     driver.findElementByName("session_password").sendKeys("D0ryL@yek93");
+//     // Click on "Sign in" button Using Locator "XPath" //button[@type='submit']
+//     driver.findElementByXPath("//button[@type='submit']").click();
+//     // Click on "Photo" button Using Locator "XPath" //button[@aria-label='Add a
+//     // photo']
+//     driver.findElementByXPath("//button[@aria-label='Add a photo']").click();
+//    Thread.sleep(2000);  
     
-        //     String impressionPost = driver
-        //             .findElement(By.xpath("//*[text()='Impressions of your post']/../../following-sibling::div//strong"))
-        //             .getText();
-        //     System.out.println("Impressions of your post: " + impressionPost);
+//    // Select the photo with the help of Robot Class
+//     StringSelection s = new StringSelection("C:\\Users\\sayan\\OneDrive\\Desktop\\picture\\natureLove.jpeg");
+//     Toolkit.getDefaultToolkit().getSystemClipboard().setContents(s, null);
+//     Robot robot = new Robot();   // Robot class throws AWT Exception
+//     robot.delay(1000);
     
-        //     // Click on "Start a post" button Using Locator "XPath" //button[contains(@class,'share-box-feed-entry__trigger')]
-        //     driver.findElementByXPath("//button[contains(@class,'share-box-feed-entry__trigger')]").click();
-    
-        //     // Type message in textbox Using Locator "XPath" //div[@data-placeholder='What do you want to talk about?']
-        //     driver.findElementByXPath("//div[@data-placeholder='What do you want to talk about?']").sendKeys("SDLC");
-        //     Thread.sleep(1000);
-        //     // Click on "Post" button Using Locator "XPath"
-        //     // //button[contains(@class,'share-actions__primary-action artdeco-button')]
-        //     driver.findElementByXPath("//button[contains(@class,'share-actions__primary-action artdeco-button')]")
-        //             .click();
-        //     // Verify that "Post successful" message is displayed Using Locator "XPath" //*[text()='Post successful.']
-        //     boolean isDisplayed = driver.findElementByXPath("//*[text()='Post successful.']").isDisplayed();
-        //     System.out.println("Post is posted successfully: " + isDisplayed);
-        // }
-    }
+//     robot.keyPress(KeyEvent.VK_CONTROL);    //Press ctrl+v
+//     robot.keyPress(KeyEvent.VK_V);          //Press ctrl+v
 
+//     robot.keyRelease(KeyEvent.VK_V);        //Release ctrl+v
+//     robot.keyRelease(KeyEvent.VK_CONTROL);  //Release ctrl+v
+
+//     // robot.keyPress(KeyEvent.VK_ENTER);
+//     robot.delay(1000);
+
+//     // robot.keyRelease(KeyEvent.VK_ENTER);
+//     robot.keyPress(KeyEvent.VK_ENTER);      //Press Enter
+//     robot.keyRelease(KeyEvent.VK_ENTER);    //Release Enter
+//     robot.delay(2000);
+    
+//     //Click on the"Done" button Using Locator "XPath" //div[@class='share-box-footer__main-actions']//button[2]
+//     driver.findElementByXPath("//div[@class='share-box-footer__main-actions']//button[2]").click();
+
+//     //Click on "Post" button Using Locator "XPath" //button[contains(@class,'share-actions__primary-action artdeco-button')]
+//     driver.findElementByXPath("//button[contains(@class,'share-actions__primary-action artdeco-button')]").click();
+
+//     //Verify that "Post successful" message is displayed Using Locator "XPath" //*[text()='Post successful.']
+//     boolean isDisplayed = driver.findElementByXPath("//*[text()='Post successful.']").isDisplayed();
+//     System.out.println("Post is posted successfully: " + isDisplayed);
+//     }
+            }
 
 }

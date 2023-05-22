@@ -5,6 +5,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class LinkedinPost {
     ChromeDriver driver;
+   
     public void Post_linkin(){
         this.driver = TestCases.TestCasesInitializer();
         
