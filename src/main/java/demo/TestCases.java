@@ -51,23 +51,60 @@ public class TestCases {
 
     }
 //SESSION 4 ASSIGMENTS
-    public void testCase02(){
+    public void testCase03(){
         
-        System.out.println("Start Test case: testCase02");
-          HyperlinksBookMyShow bookMyShow = new HyperlinksBookMyShow();
-          bookMyShow.search_Page_bookMyShow();
+        System.out.println("Start Test case: testCase03");
+          LinkedinPost Post = new LinkedinPost();
+          Post.Post_linkin();
         
-        //  public void testCase02(){
-            //         System.out.println("Start Test case: testCase02");
-            //         // Nevigate to Url  https://in.bookmyshow.com/explore/home/chennai
-            //         driver.get("https://in.bookmyshow.com/explore/home/chennai");
+        //   public void search_Page_bookMyShow() {
+        //     this.driver = TestCases.TestCasesInitializer();
             
-            //         // Locate the locater for hyperlink  Using Locator "Name" a
-            //         int count = driver.findElements(By.tagName("a")).size();
+        //     public void testCase03() throws InterruptedException {
+        //     System.out.println("Start testCase: testCase03");
+        //     // Navigate to URL https://www.linkedin.com/
+        //     driver.get("https://www.linkedin.com/");
             
-            //         // Get count of the hyperlinks Using Locator "Name" a
-            //         System.out.println(count);
-            //     }
+        //     // Type "Email or phone: in Username textbox Using Locator "Name" session_key
+        //     driver.findElementByName("session_key").sendKeys("pujalayek93@gmail.com");
+            
+        //     // Type "Password" in password textbox Using Locator "Name" session_password
+        //     driver.findElementByName("session_password").sendKeys("D0ryL@yek93");
+            
+        //     // Click on "Sign in" button Using Locator "XPath" //button[@type='submit']
+        //     driver.findElementByXPath("//button[@type='submit']").click();
+            
+        //     // Print the count of "Who's viewed your profile" Using Locator "XPath"
+        //     // //*[contains(text(),'viewed your
+        //     // profile')]/../../following-sibling::div//strong
+        //     String viewedProfile = driver
+        //             .findElement(
+        //                     By.xpath("//*[contains(text(),'viewed your profile')]/../../following-sibling::div//strong"))
+        //             .getText();
+        //     System.out.println("Who's viewed your profile: " + viewedProfile);
+           
+        //    // Print the count of "Impressions of your post" Using Locator "XPath"
+        //     // //*[text()='Impressions of your post']/../../following-sibling::div//strong
+    
+        //     String impressionPost = driver
+        //             .findElement(By.xpath("//*[text()='Impressions of your post']/../../following-sibling::div//strong"))
+        //             .getText();
+        //     System.out.println("Impressions of your post: " + impressionPost);
+    
+        //     // Click on "Start a post" button Using Locator "XPath" //button[contains(@class,'share-box-feed-entry__trigger')]
+        //     driver.findElementByXPath("//button[contains(@class,'share-box-feed-entry__trigger')]").click();
+    
+        //     // Type message in textbox Using Locator "XPath" //div[@data-placeholder='What do you want to talk about?']
+        //     driver.findElementByXPath("//div[@data-placeholder='What do you want to talk about?']").sendKeys("SDLC");
+        //     Thread.sleep(1000);
+        //     // Click on "Post" button Using Locator "XPath"
+        //     // //button[contains(@class,'share-actions__primary-action artdeco-button')]
+        //     driver.findElementByXPath("//button[contains(@class,'share-actions__primary-action artdeco-button')]")
+        //             .click();
+        //     // Verify that "Post successful" message is displayed Using Locator "XPath" //*[text()='Post successful.']
+        //     boolean isDisplayed = driver.findElementByXPath("//*[text()='Post successful.']").isDisplayed();
+        //     System.out.println("Post is posted successfully: " + isDisplayed);
+        // }
     }
 
 
