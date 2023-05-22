@@ -51,11 +51,11 @@ public class TestCases {
 
     }
 //SESSION 4 ASSIGMENTS
-    public void testCase01(){
+    public void testCase02(){
         
-        System.out.println("Start Test case: testCase01");
-          SearchAmazon amazon = new SearchAmazon();
-          amazon.search_amazon_on_google();
+        System.out.println("Start Test case: testCase02");
+          HyperlinksBookMyShow bookMyShow = new HyperlinksBookMyShow();
+          bookMyShow.search_Page_bookMyShow();
         
         //  public void testCase02(){
             //         System.out.println("Start Test case: testCase02");
