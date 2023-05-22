@@ -18,9 +18,9 @@ public class ImagepostLinkin {
     // Navigate to URL https://www.linkedin.com/
     driver.get("https://www.linkedin.com/");
     // Type "Email or phone: in Username textbox Using Locator "Name" session_key
-    driver.findElementByName("session_key").sendKeys("pujalayek93@gmail.com");
+    driver.findElementByName("session_key").sendKeys("*****@gmail.com");
     // Type "Password" in password textbox Using Locator "Name" session_password
-    driver.findElementByName("session_password").sendKeys("D0ryL@yek93");
+    driver.findElementByName("session_password").sendKeys("******");
     // Click on "Sign in" button Using Locator "XPath" //button[@type='submit']
     driver.findElementByXPath("//button[@type='submit']").click();
     // Click on "Photo" button Using Locator "XPath" //button[@aria-label='Add a
