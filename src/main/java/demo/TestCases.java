@@ -1,42 +1,82 @@
 package demo;
 
+import java.io.File;
+import java.util.List;
+import java.util.Set;
 import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
+
+import java.awt.AWTException;
+import java.awt.Robot;
+import java.awt.Toolkit;
+import java.awt.datatransfer.StringSelection;
+import java.awt.event.KeyEvent;
+
 import io.github.bonigarcia.wdm.WebDriverManager;
+
+import org.openqa.selenium.Alert;
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 //Selenium Imports
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.BrowserType;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.ui.Select;
 ///
 
+import com.google.common.io.Files;
 
 public class TestCases {
-    ChromeDriver driver;
-    public TestCases()
-    {
-        System.out.println("Constructor: TestCases");
+   static ChromeDriver driver;
+
+    public static ChromeDriver TestCasesInitializer() {
+        System.out.println("Driver initialization");
         WebDriverManager.chromedriver().timeout(30).setup();
         driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+        return driver;
 
     }
 
-    public void endTest()
-    {
+    public void endTest() {
         System.out.println("End Test: TestCases");
         driver.close();
         driver.quit();
 
     }
-
-    
-    public  void testCase01(){
+//SESSION 4 ASSIGMENTS
+    public void testCase01(){
+        
         System.out.println("Start Test case: testCase01");
-        driver.get("https://www.google.com");
-        System.out.println("end Test case: testCase02");
+          SearchAmazon amazon = new SearchAmazon();
+          amazon.search_amazon_on_google();
+        
+         // // Negivagte to URL
+        // driver.get("https://www.google.com");
+
+        // // Click on Search Bar Using Locator "Name" q
+        // driver.findElementByName("q").click();
+       
+        // // Type in "Amazon" in search bar Using Locator "Name" q
+        // driver.findElementByName("q").sendKeys("amazon");
+       
+        // // Click on Google Search button Using Locator "XPath" (//input[@value='Google
+        // // Search'])[1]
+        // driver.findElementByXPath("(//input[@value='Google Search'])[1]").click();
+
+        // // Validate Amazon.in search result Using Locator "Link
+        // // Text"(//input[@value='Google Search'])[1]
+        // boolean ds = driver.findElementByXPath("//h3[text()='Amazon.in']").isDisplayed();
+        // System.out.println(ds);
+        
+        // //Click on the link of Amazon.in Using Locator "XPath" //h3[text()='Amazon.in']
+        // driver.findElementByXPath("//h3[text()='Amazon.in']").click();
     }
 
 
